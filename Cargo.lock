@@ -1210,6 +1210,7 @@ dependencies = [
  "chrono",
  "clash-verge-logging",
  "log",
+ "regex",
  "reqwest 0.13.5",
  "rust_iso3166",
  "serde",

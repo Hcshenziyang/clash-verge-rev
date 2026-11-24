@@ -226,6 +226,8 @@ export const commands = {
     __TAURI_INVOKE<UnlockItem[]>('check_media_unlock', { onComplete }),
   checkMediaUnlockItem: (name: string) =>
     __TAURI_INVOKE<UnlockItem>('check_media_unlock_item', { name }),
+  checkCustomUnlockItem: (test: CustomUnlockTest) =>
+    __TAURI_INVOKE<CustomUnlockResult>('check_custom_unlock_item', { test }),
 }
 
 /* Types */
@@ -278,6 +280,24 @@ export type CoreFailure =
 export type CoreUpgradeReport = {
   /**  False when the managed core was already at the latest version. */
   upgraded: boolean
+}
+
+export type CustomUnlockResult = {
+  name: string
+  status: string
+  region: string | null
+  check_time: string | null
+  http_status: number | null
+  error: string | null
+}
+
+export type CustomUnlockTest = {
+  name: string
+  url: string
+  expectedStatus: number
+  bodyContains: string
+  regionPattern: string
+  hostHeader: string
 }
 
 export type DelayHistory = {

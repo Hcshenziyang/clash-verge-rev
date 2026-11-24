@@ -9,6 +9,7 @@ mod bahamut;
 mod bilibili;
 mod chatgpt;
 mod claude;
+mod custom;
 mod disney_plus;
 mod gemini;
 mod muse;
@@ -20,6 +21,7 @@ mod types;
 mod utils;
 mod youtube;
 
+pub use custom::{CustomUnlockResult, CustomUnlockTest, check_custom_unlock};
 pub use types::UnlockItem;
 
 const MAX_CONCURRENT_CHECKS: usize = 4;

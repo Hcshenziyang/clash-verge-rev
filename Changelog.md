@@ -38,6 +38,7 @@
 <details>
 <summary><strong> ✨ 新增功能 </strong></summary>
 
+- 新增自定义解锁测试，支持按响应规则提取地区
 
 </details>
 

@@ -1589,11 +1589,43 @@ export interface TranslationResources {
           noDisney: string
           originalsOnly: string
           pending: string
+          risky: string
           unsupportedRegion: string
           yes: string
         }
       }
       unlock: {
+        custom: {
+          add: string
+          addTitle: string
+          bodyContains: string
+          confirmDelete: string
+          editTitle: string
+          errors: {
+            bodyTooLarge: string
+            invalidHost: string
+            invalidPattern: string
+            invalidUrl: string
+            invalidUrlOrStatus: string
+            requestFailed: string
+            responseFailed: string
+            timeout: string
+          }
+          explanation: string
+          hostHeader: string
+          hostHelp: string
+          invalidName: string
+          invalidStatus: string
+          invalidUrl: string
+          matched: string
+          mismatch: string
+          regionHelp: string
+          regionPattern: string
+          resultHint: string
+          status: string
+          url: string
+          urlHelp: string
+        }
         page: {
           actions: {
             testing: string

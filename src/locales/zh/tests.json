@@ -56,6 +56,37 @@
         "detectionTimeout": "检测超时或失败"
       },
       "title": "解锁测试"
+    },
+    "custom": {
+      "add": "添加自定义测试",
+      "addTitle": "添加自定义测试",
+      "editTitle": "编辑自定义测试",
+      "url": "测试地址",
+      "urlHelp": "支持 HTTP 和 HTTPS，不自动跟随跳转。",
+      "status": "预期 HTTP 状态码",
+      "bodyContains": "响应内容包含（可选）",
+      "regionPattern": "地区提取正则（可选）",
+      "regionHelp": "显示第一个捕获组；不含捕获组时显示完整匹配。",
+      "hostHeader": "HTTP Host 请求头（可选）",
+      "hostHelp": "仅覆盖 HTTP Host，TLS 仍验证测试地址的域名。",
+      "explanation": "规则匹配不能证明需要登录的 API 可用，地区结果也可能只是推测。",
+      "invalidName": "请输入不重复的名称。",
+      "invalidUrl": "请输入不含账号密码的有效 HTTP 或 HTTPS 地址。",
+      "invalidStatus": "请输入 100 至 599 之间的 HTTP 状态码。",
+      "matched": "规则匹配",
+      "mismatch": "规则未匹配",
+      "confirmDelete": "删除自定义测试 {{name}}？",
+      "resultHint": "自定义规则；匹配不代表 API 可用。",
+      "errors": {
+        "invalidUrl": "测试地址无效。",
+        "invalidUrlOrStatus": "测试地址或 HTTP 状态码无效。",
+        "invalidPattern": "地区提取正则无效。",
+        "invalidHost": "HTTP Host 请求头无效。",
+        "requestFailed": "请求失败。",
+        "timeout": "请求超时。",
+        "bodyTooLarge": "响应内容超过 2 MiB。",
+        "responseFailed": "读取响应失败。"
+      }
     }
   }
 }
